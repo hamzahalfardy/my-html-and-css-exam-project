@@ -1,0 +1,790 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Concert+One&family=Hind+Siliguri:wght@300;400;500;600;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&family=Oxygen:wght@300;400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap')
+;
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+}
+/* style the first parental div and her children */
+.first-parental-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    padding: 25px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    display: none;
+}
+
+.first-parental-div-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    
+}
+
+.View-BootCamp a{
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px 30px;
+    color: black;
+}
+
+.View-BootCamp{
+    padding-right: 15px;
+}
+.View-BootCamp a:hover{
+    border: none;
+    background-color: rgb(171, 212, 56);
+    color: white;
+}
+
+.hire-Developers a{
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    border-radius: 15px;
+    padding: 15px 30px;
+    background-color: rgb(171, 212, 56);
+    color: white;
+}
+
+.hire-Developers a:hover{
+    background-color: rgba(224, 224, 224, 0.979);
+}
+
+/* second parental div section and children */
+
+.second-section{
+    background-color: rgb(233, 233, 233);
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.second-section-fst-child{
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+}
+.header{
+    font-size:30px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 0.4;
+}
+
+.Automation-intro{
+    font-family: "Oxygen", sans-serif;
+    font-weight: 150;
+    font-style: normal;
+    font-size: medium;
+    border-left: 3px solid rgb(171, 212, 56);
+    padding-left: 10px;
+    border-radius: 2px;
+    color: rgba(109, 109, 109, 0.644);
+}
+
+.talk-to-us a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    border-radius: 15px;
+    padding: 10px 50px;
+    background-color: rgb(171, 212, 56);
+}
+.talk-to-us{
+    margin-top: 2rem;
+} 
+
+/* third section and children */
+.third-section{
+    background-color: rgb(250, 249, 249);
+    margin-top: -30px;
+}
+
+.third-section h1{
+    text-align: left;
+    padding-top: 7rem;
+    padding-left: 4rem;
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 43px;
+}
+
+.third-section-fst-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-inline: 5px;
+}
+
+
+.why-choosing-Auto-con{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content:space-between;
+    justify-items: center;
+    align-content: center;
+    padding-inline-start: 15px;
+    
+    
+}
+
+.third-col{
+    padding-inline: 2rem;
+    padding-bottom: 15px;
+    
+}
+.third-col h3{
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 100px;
+    font-style: normal;
+    font-size: x-large;
+    
+}
+.third-col p{
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 50px;
+    font-style: normal;
+    line-height: 21.5px;
+    font-size: large;
+    color: rgba(22, 22, 22, 0.582);
+    
+}
+
+/* The fourth parental div section and children   */
+
+.what-we-offer{
+    background-color: rgb(255, 255, 255);
+}
+
+.what-we-offer h1{
+    text-align: right;
+    padding-top: 7rem;
+    padding-right: 4rem;
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 43px;
+    
+    
+}
+.fourth-parental-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-inline: 5px;
+}
+/* discover the error from here */
+.fourth-section{
+    padding-bottom: 3rem;  
+    width: 350px;
+    height: 270px;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 50px; 
+}
+
+.fourth-section h6{
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 50px;
+    font-style: normal;
+    font-size: x-large;
+    line-height: 25px;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    color: rgb(37, 37, 37);
+    transition: color 0.3s ease;   
+}
+
+.fourth-section:hover
+h6{
+    color: white;
+}
+
+.fourth-section p{
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 50px;
+    font-style: normal;
+    line-height: 21.5px;
+    font-size: large;
+    color: rgba(22, 22, 22, 0.582);
+    transition: color 0.3s ease;
+}
+
+.fourth-section:hover
+p{
+    color: white;
+}
+.fourth-section a{
+    color: rgb(171, 212, 56);
+    text-decoration: none;
+}
+
+/* styles.css */
+.icon-container {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the container circular */
+    display: flex; /* Ensures the icon stays within the circular container */
+    background-color: rgb(171, 212, 56); /* Set your desired background color */
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+    
+  }
+
+.fourth-section:hover{
+    background-color: rgb(171, 212, 56);
+    color:white;
+    cursor: pointer;
+}
+
+.fourth-section:hover 
+.icon-container{
+    background-color: white;
+    color: rgb(171, 212, 56);
+}
+   
+#fourth-icon {
+   /* font-size: 30px; Make the image fill the container */
+   color: white; 
+   transition: color 0.3s ease;
+}
+.fourth-section:hover 
+#fourth-icon{
+    background-color: white;
+    color: rgb(171, 212, 56);
+}
+
+#learn{
+    padding-right: 5px;
+    font-size: 15px;
+    transition: color 0.3s ease;  
+}
+
+.fourth-section:hover
+a{
+    color: white;
+}
+
+  
+/* fifth section styling and i children */
+.fifth-section{
+    background-color: whitesmoke;
+}
+
+.fifth-section h1{
+    text-align: left;
+    padding-top: 7rem;
+    padding-left: 4rem;
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 43px;
+}
+
+.fifth-parental-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+}
+
+.workers{
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    border-radius: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 100px;
+    
+}
+
+.workers-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.workers h4, 
+.workers p, 
+.workers .workers-icon{
+    padding-bottom: 2px;
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 50px;
+    font-style: normal;
+    line-height: 21.5px;
+    font-size: large;
+    color: rgba(22, 22, 22, 0.582);
+}
+
+/* last section */
+
+.sixth-section{
+    background-color: rgb(252, 252, 252);
+}
+.item-one{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px
+}
+.item-one h3{
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 100px;
+    font-style: normal;
+    font-size: xx-large;
+}
+.item-one p{
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 55px;
+    font-style: normal;
+    line-height: 21px;
+    font-size: large;
+    color: rgb(22, 22, 22);
+    margin-top: 5px;
+}
+.clients{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-left: -19rem;
+}
+.client{
+    position: relative;
+    justify-items: center;
+    align-items: center;
+}
+
+.images{
+    position: absolute; /* Positions the images relative to their containing block */
+  }
+  
+  .images:nth-child(1) {
+    left: 0; /* Adjust as needed */
+  }
+  
+  .images:nth-child(2) {
+    left: 50px; /* Adjust as needed */
+  }
+  .images:nth-child(3) {
+    left: 100px; /* Adjust as needed */
+  }
+  
+  .images:nth-child(4) {
+    left: 150px; /* Adjust as needed */
+  }
+  .images:nth-child(5) {
+    left: 200px; /* Adjust as needed */
+  }
+  
+
+/* ------------------------------------------------- */
+
+.item-two{
+    margin-top: 10rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* add black background, size and font style to the two container */
+.item-two-fst-two-child{
+    background-color: black;
+    color: white;
+    width: 500px;
+    height: 250px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.avatar-and-star{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+.item-two-fst-two-child p{
+    padding-left: 1.5rem;
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 55px;
+    font-style: normal;
+    line-height: 21px;
+    font-size: large;
+    color: rgba(226, 223, 223, 0.712);
+}
+
+.black-btm-names{
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+/* the footer styling */
+
+footer{
+    background-color: black;
+    margin-top: 10rem;
+    height: 25rem;
+
+}
+.footer-contents{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    justify-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+
+}
+
+.footer-contents-child{
+    line-height: 40px;
+    margin-top: 50px;
+}
+
+.footer-contents-child1{
+    padding-top: 79px;
+    padding-bottom: 50px;
+    color: white;
+}
+.footer-contents-child p a{
+    text-decoration:none;
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 55px;
+    font-style: normal;
+    font-size: medium;
+    color: rgba(245, 245, 245, 0.925);
+    line-height: 25px;
+}
+
+.footer-contents-child h4{
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 50px;
+    font-style: normal;
+    /* line-height: 21.5px; */
+    font-size: large;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+/* Top Bar section */
+.AutoLogo{
+    width: 25px;
+}
+
+
+/* second section styling */
+.second-section{
+    width: 100%;
+}    
+.second-section-fst-child{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: flex-start;
+    align-items: flex-start;
+    padding-left: 2rem;
+    margin-top: -50px;
+}
+
+.header{
+    flex-wrap: wrap;
+    font-size:15px;
+    line-height: 0.8;
+    font-weight: 500;
+    padding-inline-end: 30%;  
+    
+}
+
+/* .header head{
+    
+} */
+.second-section-fst-child p{
+    padding-inline-end: 70px;
+    color: rgba(0, 0, 0, 0.623);
+}
+
+.second-section-fst-child img{
+    margin-top: 5rem;
+    width: 300px;
+    padding-left: 35px;
+}
+
+/* third section styling */
+
+.third-section{
+    width: 100%;
+    margin-top: -25px;
+}
+.third-section-fst-child{
+    display: flex;
+    flex-direction: column;
+}
+
+.third-section h1{
+    text-align: left;
+    padding-top: 3.5rem;
+    padding-left: 3rem;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+
+.third-section img{
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.why-choosing-Auto-con{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content:center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 25px;   
+}
+
+.why-choosing-Auto-con p{
+    line-height: 25px;
+}
+
+/* what we offer section */
+.what-we-offer{
+    width: 100%;
+}
+
+.what-we-offer h1{
+    text-align: right;
+    padding-top: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 10px;
+    font-size: 35px;
+    line-height: 35px;
+}
+.fourth-parental-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.fourth-section{
+    padding-bottom: 3rem;  
+    width: 350px;
+    height: 310px;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.fourth-section h6{
+    margin-bottom: 10px;
+}
+
+.fourth-section p{
+    font-size: larger;
+    font-weight: 100;
+}
+.fourth-section a{
+    padding-top: 5px;
+}
+
+/*Meet our members section */
+.fifth-section{
+    width: 100%;
+}
+
+.fifth-section h1{
+    text-align: left;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-bottom: 15px;
+    font-size: 35px;
+    line-height: 35px;
+}
+.fifth-parental-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.workers{
+    width: 300px;
+    height: 300px;
+    border-radius: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 100px;
+}
+
+.workers img{
+    margin-top: 5px;
+}
+
+.workers h4, .workers p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* testimonial section */
+.sixth-section{
+    width: 100%;
+}
+.sixth-section h3{
+    font-size: 28px;
+}
+.item-one p{
+    font-size: medium;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+}
+
+/* Black div section */
+
+.item-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center; 
+}
+
+.item-two-fst-two-child{
+    margin-bottom: 30px;
+    width: 350px;
+    height: 250px;
+    padding: 5px;
+}
+
+.black-btm-names{
+    margin-top: -1.5rem;
+    margin-right: 25px;
+}
+
+/* footer section */
+
+footer{
+    width: 100%;
+    height: auto;
+}
+
+.footer-contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.footer-contents-child1{
+    margin-bottom: -25px;
+}
+.footer-contents-child{
+    line-height: 20px;
+    text-align: center;
+}
+
+.footer-contents-child p a{
+    font-size: 20px;    
+    line-height: 20px;
+}
+
+.footer-contents-child h4{
+    /* line-height: 21.5px; */
+    font-size: 20px;
+}
+/*<<<<<< --------------The End-------------------->>>>>> */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

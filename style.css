@@ -1166,6 +1166,309 @@ footer{
     /*<<<<<< --------------The End-------------------->>>>>> */
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        overflow-x: hidden;
+     }   
+    Top Bar section
+    .AutoLogo{
+        width: 25px;
+    }
+    .View-BootCamp a{
+        padding: 10px 20px;
+    }
+    .hire-Developers a{
+        /* margin-right: -30px; */
+        padding: 10px 20px;
+    }
+    
+    /* .first-parental-div-child{
+        position: relative;
+      display: inline-block
+    } */
+    
+    
+     .second-section{
+        width: 100vw;
+        margin: 0; 
+        overflow-x: hidden;
+    }    
+    .second-section-fst-child{
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+        align-items: center;
+        margin-left: 2rem;
+        margin-top: -50px;
+    }
+    
+    .head{
+        margin-top: -40px;
+    }
+    .header{
+         flex-wrap: wrap;
+        font-size:20px;
+        line-height: 0.8;
+        font-weight: 400;
+        /* padding-inline-end: 30%; */
+        
+    }
+    
+    
+    .second-section-fst-child p{
+        padding-inline-end: 70px;
+        color: rgba(0, 0, 0, 0.623);
+        font-size: 20px;
+    }
+    
+    .second-section-fst-child img{
+        margin-top: 5rem;
+        width: 250px;
+        margin-right: 25px;
+    }
+    
+    /* third section styling */
+    
+    .third-section{
+        width: 100vw;
+        margin-top: -25px;
+        overflow-x: hidden;
+    }
+    .third-section-fst-child{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .third-section h1{
+        text-align: left;
+        padding-top: 3.5rem;
+        padding-left: 3rem;
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+    
+    .third-section img{
+        width: 250px;
+        margin-bottom: 20px;
+        margin-left: -50px;
+    }
+    
+    .why-choosing-Auto-con{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content:center;
+        justify-items: center;
+        align-content: center;
+        /* align-items: center; */
+        padding-bottom: 25px;
+        margin-left: -40;
+           
+    }
+    
+    .why-choosing-Auto-con h3{
+        font-size: 30px;
+    }
+    
+    .why-choosing-Auto-con p{
+        line-height: 25px;
+        text-align: left;
+        padding-inline-end: 35px;
+        font-size: 20px;
+    }
+    
+    /* what we offer section */
+    .what-we-offer{
+        width: 100vw;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    
+    .what-we-offer h1{
+        text-align: right;
+        padding-top: 3rem;
+        margin-right: 1.5rem;
+        margin-bottom: 0;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .fourth-parental-section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content:center;
+        justify-items: center;
+        align-content: center;
+        /* align-items: center; */
+        padding-bottom: 30px;
+        margin-top: -30;
+    }
+
+    .fourth-section{
+        padding-bottom: 2rem;  
+        width: 300px;
+        height: auto;
+        border-radius: 15px;
+        padding: 15px;
+        margin-bottom: 50px;
+    }
+    
+    .fourth-section h6{
+        margin-bottom: 15px;
+        font-size: 20px;
+        margin-top: 5px;
+        line-height: 0.85;
+    }
+    
+    .fourth-section p{
+        font-size: 18px;
+        margin-top: 0;
+        padding-top: 5px;
+        padding-inline-end: 1.5rem;
+    }
+    .icon-container{
+        margin-bottom: 10px;
+
+    }
+
+    .fourth-section p a{
+        padding-top: 10px;
+        margin-bottom: 0px;
+    }
+    
+    /*Meet our members section */
+    .fifth-section{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    
+    .fifth-section h1{
+        text-align: left;
+        padding-top: 3rem;
+        margin-right: 1.5rem;
+        margin-bottom: 5rem;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .fifth-parental-section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* flex-wrap: wrap; */
+        justify-content: space-around;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .workers{
+        width: 300px;
+        height: 300px;
+        border-radius: 15%;
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        margin-bottom: 100px;
+        overflow-x: hidden;
+    }
+    
+    .workers img{
+        margin-top: -20px;
+    }
+    
+    .workers h4, .workers p{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: larger;
+    }
+    /* testimonial section */
+    .sixth-section{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .sixth-section h3{
+        font-size: 28px;
+    }
+    .item-one p{
+        font-size: medium;
+        padding-inline-start: 5px;
+        padding-inline-end: 5px;
+    }
+    
+    /* Black div section */
+    
+    .item-two{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        justify-items: center;
+        align-content: center; 
+    }
+    
+    .item-two-fst-two-child{
+        margin-bottom: 30px;
+        width: 300px;
+        height: auto;
+        padding: 5px;
+    }
+    
+    .avatar-and-star{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .black-btm-names{
+        margin-top: -1.5rem;
+        margin-right: 25px;
+    }
+    
+    /* footer section */
+    
+    footer{
+        width: 100vw;
+        height: auto;
+        overflow-x: hidden;
+    }
+    
+    .footer-contents{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+        /* align-items: center; */
+        justify-items: center;
+        align-content: center;
+    }
+    
+    .footer-contents-child1{
+        margin-bottom: -5rem;
+    }
+    .footer-contents-child{
+        line-height: 15px;
+        text-align: center;
+    }
+    
+    .footer-contents-child p a{
+        font-size: 16px;    
+        line-height: 20px;
+    }
+    
+    .footer-contents-child h4{
+        /* line-height: 21.5px; */
+        font-size: 20px;
+    }
+    /*<<<<<< --------------The End-------------------->>>>>> */
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 

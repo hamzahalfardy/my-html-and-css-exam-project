@@ -19,18 +19,22 @@ body{
     background-color: white;
     position: sticky;
     top: 0;
-    display: none;
+    
 }
 
-.first-parental-div-child{
-    display: flex;
-    flex-direction: row;
+.dropdown{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
     justify-items: center;
     align-items: center;
     position: -webkit-sticky;
     position: sticky;
     
+}
+
+#myElement{
+    display: none;
 }
 
 .View-BootCamp a{
@@ -73,7 +77,9 @@ body{
 .second-section{
     background-color: rgb(233, 233, 233);
     margin-top: 0;
-    padding-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    /* padding-top: 0; */
 }
 
 .second-section-fst-child{
@@ -123,6 +129,8 @@ body{
 .third-section{
     background-color: rgb(250, 249, 249);
     margin-top: -30px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .third-section h1{
@@ -184,6 +192,7 @@ body{
 
 .what-we-offer{
     background-color: rgb(255, 255, 255);
+    margin: 0;
 }
 
 .what-we-offer h1{
@@ -211,7 +220,7 @@ body{
 .fourth-section{
     padding-bottom: 3rem;  
     width: 350px;
-    height: 270px;
+    height: 350px;
     border-radius: 15px;
     padding: 15px;
     margin-bottom: 50px; 
@@ -310,6 +319,7 @@ a{
 /* fifth section styling and i children */
 .fifth-section{
     background-color: whitesmoke;
+    margin: 0;
 }
 
 .fifth-section h1{
@@ -370,6 +380,7 @@ a{
 
 .sixth-section{
     background-color: rgb(252, 252, 252);
+    margin: 0;
 }
 .item-one{
     display: flex;
@@ -487,6 +498,8 @@ footer{
     background-color: black;
     margin-top: 10rem;
     height: 25rem;
+    margin-left:0;
+    margin-right: 0;
 
 }
 .footer-contents{
@@ -530,15 +543,54 @@ footer{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+ body{
+    overflow-x: hidden;
+ }   
 /* Top Bar section */
 .AutoLogo{
     width: 25px;
 }
+/* #myElement{
+    display: block;
+}
 
+.first-parental-div-child{
+    position: relative;
+  display: inline-block
+}
 
+.dropdown{
+    display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  position: fixed;
+    top: 5rem;
+    left: 250px;
+    right: 50%; */
+    /* max-width: 150vw; */
+    /* z-index: 10;
+    transform: translateX(0px) translateY(0%) translateZ(0px); */
+/* z-index: 1; */
+/* }
+.first-parental-div-child:hover .dropdown{
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+} */
 /* second section styling */
 .second-section{
-    width: 100%;
+    width: 100vw;
+    /* margin: 0; */
+    overflow-x: hidden;
 }    
 .second-section-fst-child{
     display: flex;
@@ -552,11 +604,17 @@ footer{
 }
 
 .header{
-    flex-wrap: wrap;
-    font-size:15px;
+    /* flex-wrap: wrap; */
+    font-size:30px;
     line-height: 0.8;
     font-weight: 500;
-    padding-inline-end: 30%;  
+    padding-inline-end: 30%;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left; */
+    
     
 }
 
@@ -570,19 +628,24 @@ footer{
 
 .second-section-fst-child img{
     margin-top: 5rem;
-    width: 300px;
-    padding-left: 35px;
+    width: 250px;
+    padding-left: 25px;
 }
 
 /* third section styling */
 
 .third-section{
-    width: 100%;
+    width: 100vw;
     margin-top: -25px;
+    overflow-x: hidden;
 }
 .third-section-fst-child{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
 }
 
 .third-section h1{
@@ -595,8 +658,9 @@ footer{
 }
 
 .third-section img{
-    width: 250px;
+    width: 200px;
     margin-bottom: 20px;
+    margin-left: -50px;
 }
 
 .why-choosing-Auto-con{
@@ -606,36 +670,48 @@ footer{
     justify-items: center;
     align-content: center;
     align-items: center;
-    padding-bottom: 25px;   
+    padding-bottom: 25px;
+    margin-left: -40;
+       
+}
+
+.why-choosing-Auto-con h3{
+    font-size: 20px;
 }
 
 .why-choosing-Auto-con p{
     line-height: 25px;
+    text-align: left;
+    padding-inline-end: 35px;
+    font-size: 16px;
 }
 
 /* what we offer section */
 .what-we-offer{
-    width: 100%;
+    width: 100vw;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 .what-we-offer h1{
     text-align: right;
     padding-top: 3rem;
-    padding-right: 3rem;
+    margin-right: 1.5rem;
     padding-bottom: 10px;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 35px;
 }
 .fourth-parental-section{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    margin-right: 40px;
+    /* flex-wrap: wrap; */
 
 }
 .fourth-section{
-    padding-bottom: 3rem;  
-    width: 350px;
-    height: 310px;
+    padding-bottom: 2rem;  
+    width: 300px;
+    height: auto;
     border-radius: 15px;
     padding: 15px;
     margin-bottom: 50px;
@@ -644,19 +720,24 @@ footer{
 
 .fourth-section h6{
     margin-bottom: 10px;
+    font-size: 20px;
+    margin-top: 5px;
+
 }
 
 .fourth-section p{
-    font-size: larger;
-    font-weight: 100;
+    font-size: 16px;
+    margin-top: 0;
 }
-.fourth-section a{
-    padding-top: 5px;
+.fourth-section p a{
+    padding-top: 15px;
+    margin-bottom: 5px;
 }
 
 /*Meet our members section */
 .fifth-section{
-    width: 100%;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .fifth-section h1{
@@ -682,12 +763,13 @@ footer{
     height: 300px;
     border-radius: 15%;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
     justify-items: center;
     margin-bottom: 100px;
+    overflow-x: hidden;
 }
 
 .workers img{
@@ -700,7 +782,8 @@ footer{
 }
 /* testimonial section */
 .sixth-section{
-    width: 100%;
+    width: 100vw;
+    overflow-x: hidden;
 }
 .sixth-section h3{
     font-size: 28px;
@@ -737,8 +820,9 @@ footer{
 /* footer section */
 
 footer{
-    width: 100%;
+    width: 100vw;
     height: auto;
+    overflow-x: hidden;
 }
 
 .footer-contents{
@@ -771,7 +855,315 @@ footer{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+    body{
+        overflow-x: hidden;
+     }   
+    /* Top Bar section */
+    /* .AutoLogo{
+        width: 25px;
+    }
+    #myElement{
+        display: block;
+    }
+    
+    .first-parental-div-child{
+        position: relative;
+      display: inline-block
+    }
+    
+    .dropdown{
+        display: none;
+      position: fixed;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      padding: 12px 16px;
+      position: fixed;
+        top: 5rem;
+        left: 250px;
+        right: 50%;
+        /* max-width: 150vw; */
+        /* z-index: 10;
+        transform: translateX(0px) translateY(0%) translateZ(0px); */
+    /* z-index: 1; */
+    }
+    /* .first-parental-div-child:hover .dropdown{
+        display: block;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+        position: -webkit-sticky;
+        position: sticky; 
+    } */
+    /* second section styling */
+    .second-section{
+        width: 100%;
+        margin: 0;
+        overflow-x: hidden;
+    }    
+    .second-section-fst-child{
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+        /* padding-left: 2rem; */
+        margin-top: -50px;
+    }
+    
+    .header{
+        /* flex-wrap: wrap; */
+        font-size:15px;
+        line-height: 0.8;
+        font-weight: 500;
+        /* padding-inline-end: 30%; */
+        /* display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: flex-start;
+        text-align: left; */
+        
+        
+    }
+    
+    /* .header head{
+        
+    } */
+    .second-section-fst-child p{
+        /* padding-inline-end: 70px; */
+        color: rgba(15, 15, 15, 0.534);
+        font-size: 18px;
+    }
+    
+    .second-section-fst-child img{
+        margin-top: 5rem;
+        width: 250px;
+        padding-left: 25px;
+    }
+    
+    /* third section styling */
+    
+    .third-section{
+        width: 100%;
+        margin-top: -25px;
+        overflow-x: hidden;
+    }
+    .third-section-fst-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .third-section h1{
+        text-align: left;
+        padding-top: 3.5rem;
+        padding-left: 3rem;
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+    
+    .third-section img{
+        width: 200px;
+        margin-bottom: 20px;
+        margin-left: -50px;
+    }
+    
+    .why-choosing-Auto-con{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content:center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        padding-bottom: 25px;
+        margin-left: -40;
+           
+    }
+    
+    .why-choosing-Auto-con h3{
+        font-size: 20px;
+    }
+    
+    .why-choosing-Auto-con p{
+        line-height: 25px;
+        text-align: left;
+        padding-inline-end: 35px;
+        font-size: 16px;
+    }
+    
+    /* what we offer section */
+    .what-we-offer{
+        width: 100%;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    
+    .what-we-offer h1{
+        text-align: right;
+        padding-top: 3rem;
+        margin-right: 1.5rem;
+        padding-bottom: 10px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .fourth-parental-section{
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+        /* flex-wrap: wrap; */
+    
+    }
+    .fourth-section{
+        padding-bottom: 2rem;  
+        width: 300px;
+        height: auto;
+        border-radius: 15px;
+        padding: 15px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+    }
+    
+    .fourth-section h6{
+        margin-bottom: 10px;
+        font-size: 20px;
+        margin-top: 5px;
+    
+    }
+    
+    .fourth-section p{
+        font-size: 16px;
+        margin-top: 0;
+    }
+    .fourth-section p a{
+        padding-top: 15px;
+        margin-bottom: 5px;
+    }
+    
+    /*Meet our members section */
+    .fifth-section{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .fifth-section h1{
+        text-align: left;
+        padding-top: 3rem;
+        padding-left: 2rem;
+        padding-bottom: 15px;
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .fifth-parental-section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .workers{
+        width: 300px;
+        height: 300px;
+        border-radius: 15%;
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        margin-bottom: 100px;
+        overflow-x: hidden;
+    }
+    
+    .workers img{
+        margin-top: 5px;
+    }
+    
+    .workers h4, .workers p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    /* testimonial section */
+    .sixth-section{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .sixth-section h3{
+        font-size: 28px;
+    }
+    .item-one p{
+        font-size: medium;
+        padding-inline-start: 10px;
+        padding-inline-end: 10px;
+    }
+    
+    /* Black div section */
+    
+    .item-two{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center; 
+    }
+    
+    .item-two-fst-two-child{
+        margin-bottom: 30px;
+        width: 350px;
+        height: 250px;
+        padding: 5px;
+    }
+    
+    .black-btm-names{
+        margin-top: -1.5rem;
+        margin-right: 25px;
+    }
+    
+    /* footer section */
+    
+    footer{
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+    }
+    
+    .footer-contents{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+    }
+    
+    .footer-contents-child1{
+        margin-bottom: -25px;
+    }
+    .footer-contents-child{
+        line-height: 20px;
+        text-align: center;
+    }
+    
+    .footer-contents-child p a{
+        font-size: 20px;    
+        line-height: 20px;
+    }
+    
+    .footer-contents-child h4{
+        /* line-height: 21.5px; */
+        font-size: 20px;
+    }
+    /*<<<<<< --------------The End-------------------->>>>>> */
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -785,6 +1177,4 @@ footer{
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
+@media only screen and (min-width: 1200px){}
